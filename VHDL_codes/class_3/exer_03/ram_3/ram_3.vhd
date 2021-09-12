@@ -1,7 +1,7 @@
-----------------------------------------------------------------------------------------
+------------------------------------------------------------------------------
 -- ram 3 (Random Access Mamory)
 -- author: Paulo Cezar da Paixao
-----------------------------------------------------------------------------------------
+-- 
 --   port control
 --   crtl action
 --   ---  -------
@@ -14,25 +14,25 @@
 --   110    
 --   111    
   
-----------------------------------------------------------------------------------------
+------------------------------------------------------------------------------
 -- libraries and packages
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
-----------------------------------------------------------------------------------------
+------------------------------------------------------------------------------
 -- entity
 entity ram_3 is
 
-   generic(width : integer:= 4); 			                -- data width
+   generic(width : integer:= 4); 			      -- data width
    
    port (
-            clk	    : in std_logic;			       	            -- clock pulse 
-	        crtl	: in std_logic_vector(2 downto 0);          -- control word    
-	        data    : inout std_logic_vector(width-1 downto 0)  -- data input
+          clk	: in std_logic;			       	      -- clock pulse 
+	  crtl	: in std_logic_vector(2 downto 0);            -- control word    
+	  data  : inout std_logic_vector(width-1 downto 0)    -- data input
         );
 end entity;
 
-----------------------------------------------------------------------------------------
+------------------------------------------------------------------------------
 -- architecture
 architecture hardware of ram_3 is
 
@@ -53,29 +53,29 @@ architecture hardware of ram_3 is
         -- pre-condition
         if (clk'event and clk = '1') then
 
-        -- reset memory
-        if (crtl = "000") then 
-		    ram(to_integer(unsigned(address))) <= (others=>'Z');		 
+            -- reset memory
+            if (crtl = "000") then 
+		ram(to_integer(unsigned(address))) <= (others=>'Z');		 
 	    end if;
 
 	    -- set address memory
 	    if (crtl = "001") then 
-		    address <= data;  		
-        end if;
+		address <= data;  		
+            end if;
 
             -- info data 
 	    if (crtl = "010") then 
-		    info <= data; 		
+		info <= data; 		
 	    end if;
 
-        -- write data memory
+            -- write data memory
 	    if (crtl = "011") then 
-		    ram(to_integer(unsigned(address))) <= info; 	 		
+		ram(to_integer(unsigned(address))) <= info; 	 		
 	    end if;
 
             -- read data memory
 	    if (crtl = "100") then 
-		    data <= ram(to_integer(unsigned(address))); 		
+		data <= ram(to_integer(unsigned(address))); 		
 	    end if;
 
 	end if; 

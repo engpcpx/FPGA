@@ -1,12 +1,11 @@
-----------------------------------------------------------------------------------------
 -- Example
 -- OR REDUTOR. take all inputs end make or operation
-----------------------------------------------------------------------------------------
+
 -- libraries and packages
 library IEEE;
 	use IEEE.std_logic_1164.all;
 	use IEEE.numeric_std.all;
-----------------------------------------------------------------------------------------
+
 -- entity declaration
 entity or_exemplo is
 
@@ -15,7 +14,7 @@ entity or_exemplo is
 		output_port	:	out	std_logic
 	);
 end or_exemplo;
-----------------------------------------------------------------------------------------
+
 -- architecture declaretion 
 architecture behavioral of or_exemplo is
 

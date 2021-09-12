@@ -1,7 +1,4 @@
-------------------------------------------------------------------------------
--- parallel_sr (parallel shift register)
--- author: Paulo Cezar da Paixao
-------------------------------------------------------------------------------
+-- exer_04
 --------------------------------------------------------------------------------------
 library ieee;
 use ieee.std_logic_1164.all;
@@ -12,16 +9,16 @@ entity parallel_sr is
 	generic (n : integer := 16);  
 
 	port(
-			clk 	: in std_logic;
-            rst 	: in std_logic;
-			en  	: in std_logic;
-			force_0 : in std_logic;
-            force_1 : in std_logic;
-            direction : in std_logic;
-			parallel_load : in std_logic;
-			parallel_data      : in  std_logic_vector(n-1 downto 0);
-			shift_register_in  : in  std_logic;
-            shift_register_out : out std_logic_vector(n-1 downto 0)
+		clk 	: in std_logic;
+                rst 	: in std_logic;
+		en  	: in std_logic;
+		force_0 : in std_logic;
+                force_1 : in std_logic;
+                direction : in std_logic;
+		parallel_load : in std_logic;
+		parallel_data      : in  std_logic_vector(n-1 downto 0);
+		shift_register_in  : in  std_logic;
+                shift_register_out : out std_logic_vector(n-1 downto 0)
 	    );
 end entity;
 --------------------------------------------------------------------------------------
@@ -33,7 +30,7 @@ architecture hardware of parallel_sr is
 
      begin    
 		--primeiro seleciono o que vai entrar no SR, conforme espec.
-		--deste jeito, forï¿½ar 0 tem prioridade.
+		--deste jeito, forçar 0 tem prioridade.
 		data_selected <= '0' when force_0 = '1' else
 				 '1' when force_1 = '1' else shift_register_in;
 		
@@ -60,6 +57,7 @@ architecture hardware of parallel_sr is
                                    end if; 
                                 end if;
 			end if;
+
 
 		end process;
 		

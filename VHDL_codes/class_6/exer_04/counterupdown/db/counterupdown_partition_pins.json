@@ -1,0 +1,57 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "o_leds[0]",
+					"strict" : false
+				},
+				{
+					"name" : "o_leds[1]",
+					"strict" : false
+				},
+				{
+					"name" : "o_leds[2]",
+					"strict" : false
+				},
+				{
+					"name" : "o_leds[3]",
+					"strict" : false
+				},
+				{
+					"name" : "i_data_key[0]",
+					"strict" : false
+				},
+				{
+					"name" : "i_load_key",
+					"strict" : false
+				},
+				{
+					"name" : "i_clk",
+					"strict" : false
+				},
+				{
+					"name" : "i_counter_buttom",
+					"strict" : false
+				},
+				{
+					"name" : "i_data_key[1]",
+					"strict" : false
+				},
+				{
+					"name" : "i_data_key[2]",
+					"strict" : false
+				},
+				{
+					"name" : "i_data_key[3]",
+					"strict" : false
+				},
+				{
+					"name" : "i_sel_ud_down",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

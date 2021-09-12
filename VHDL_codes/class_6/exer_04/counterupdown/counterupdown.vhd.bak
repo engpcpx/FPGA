@@ -1,0 +1,45 @@
+LIBRARY IEEE;
+USE IEEE.std_logic_1164.all;
+USE IEEE.numeric_std.all;
+
+entity counter_botao is
+    port (
+        clk_in		     : in  std_logic;
+		botao_count      : in  std_logic;
+		botao_load       : in  std_logic;
+		seletor_ud_input : in  std_logic;
+		leds_saida       : out std_logic_vector(3 downto 0);
+    );
+end counter_botao;
+
+architecture rtl of counter_botao is
+
+	--o bloco de debounce está aqui porque ao apertar o botão, temos ruido.
+	--avaliar o bloco de debounce.
+	component debounce
+		port (
+			ck      : in  std_logic;
+			deb_in  : in  std_logic;
+			deb_out : out std_logic
+		);
+	end component;
+
+	
+begin
+
+	deb_u : debounce
+		port map(
+			ck      => clk_in,
+			deb_in  => ,--bloco de debounce, entrada
+			deb_out => ,--bloco de debounce, saída
+		);
+	end component;
+
+	process(clk_in)
+	begin
+
+		--incluir aqui o código do contador. 
+
+	end process;
+
+end rtl;

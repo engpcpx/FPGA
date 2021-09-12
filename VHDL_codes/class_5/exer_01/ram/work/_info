@@ -1,0 +1,97 @@
+m255
+K4
+z2
+!s11e vcom 2021.1 2021.02, Feb  3 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/FPGA_VHDL_codes/class_6/exer_01/simulation/modelsim
+Eram
+Z0 w1629998987
+Z1 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 4
+Z4 dC:/FPGA_VHDL_codes/class_5/exer_01/ram
+Z5 8C:/FPGA_VHDL_codes/class_5/exer_01/ram/ram.vhd
+Z6 FC:/FPGA_VHDL_codes/class_5/exer_01/ram/ram.vhd
+l0
+L12 1
+V;:;@b_;75c3Pg?Kc?:cnJ0
+!s100 G7;NfP]@DN_lnGKl0mA9E0
+Z7 OV;C;2021.1;73
+32
+Z8 !s110 1630863419
+!i10b 1
+Z9 !s108 1630863419.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/FPGA_VHDL_codes/class_5/exer_01/ram/ram.vhd|
+Z11 !s107 C:/FPGA_VHDL_codes/class_5/exer_01/ram/ram.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Ahardware
+R1
+R2
+R3
+DEx4 work 3 ram 0 22 ;:;@b_;75c3Pg?Kc?:cnJ0
+!i122 4
+l34
+L27 33
+VD<8:PDA3FB64@UI9JWOTE0
+!s100 2SEm7?_4zSJA00__YfZah0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Eram_tb
+Z14 w1629999021
+R1
+R2
+R3
+!i122 5
+R4
+Z15 8C:/FPGA_VHDL_codes/class_5/exer_01/ram/ram_tb.vhd
+Z16 FC:/FPGA_VHDL_codes/class_5/exer_01/ram/ram_tb.vhd
+l0
+L7 1
+Vao?W4Qgzi@SB5;PF^b78c3
+!s100 bL^A9KoS2J8de4[:b<[BO0
+R7
+32
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/FPGA_VHDL_codes/class_5/exer_01/ram/ram_tb.vhd|
+Z18 !s107 C:/FPGA_VHDL_codes/class_5/exer_01/ram/ram_tb.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R1
+R2
+R3
+Z19 DEx4 work 6 ram_tb 0 22 ao?W4Qgzi@SB5;PF^b78c3
+!i122 5
+l37
+Z20 L15 87
+Z21 VUf_o7L4JLRNoBl<z0dP[W1
+Z22 !s100 K@kLb01e8KVQ7[OO83XZE2
+R7
+32
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13

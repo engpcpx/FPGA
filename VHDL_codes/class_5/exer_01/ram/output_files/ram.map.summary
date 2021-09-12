@@ -1,0 +1,18 @@
+Analysis & Synthesis Status : Successful - Sun Sep 05 21:42:12 2021
+Quartus II Version : 10.0 Build 218 06/27/2010 SJ Web Edition
+Revision Name : ram
+Top-level Entity Name : ram
+Family : Cyclone IV GX
+Total logic elements : 17
+    Total combinational functions : 17
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 51
+Total virtual pins : 0
+Total memory bits : 256
+Embedded Multiplier 9-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0

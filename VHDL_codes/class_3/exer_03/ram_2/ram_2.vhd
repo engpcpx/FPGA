@@ -1,28 +1,29 @@
-----------------------------------------------------------------------------------------
+------------------------------------------------------------------------------
 -- ram 2 (Random Access Mamory)
--- author: Paulo Cezar da Paixao 
-----------------------------------------------------------------------------------------
+-- author: Paulo Cezar da Paixao
+-- 
+------------------------------------------------------------------------------
 -- libraries and packages
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
-----------------------------------------------------------------------------------------
+------------------------------------------------------------------------------
 -- entity
 entity ram_2 is
 
 
-   generic(	width :	integer:=  8;                                   -- memory width
-		      depth :  integer:=8;                                     -- memory depth 
-		      addr  :	integer:=2);                                    -- address width
+   generic(	width :	integer:=8;                             -- memory width
+		depth : integer:=8;                             -- memory depth 
+		addr  :	integer:=2);                            -- address width
 
    port (
-            clk	   : in  std_logic;				                     -- clock pulse    
-            rst      : in  std_logic;                      	         -- reset memory
-            wre      : in  std_logic;      			                  -- write read enable 
-            address  : in  std_logic_vector(addr-1 downto 0); 	      -- address memory	
-	         iodata   : inout  std_logic_vector(width-1 downto 0));	-- input data
+         clk	 : in  std_logic;				-- clock pulse    
+         rst     : in  std_logic;                      	        -- reset memory
+         wre     : in  std_logic;      			        -- write read enable 
+         address : in  std_logic_vector(addr-1 downto 0); 	-- address memory	
+	 iodata  : inout  std_logic_vector(width-1 downto 0));	-- input data
 end entity;
-----------------------------------------------------------------------------------------
+------------------------------------------------------------------------------
 -- architecture
 architecture hardware of ram_2 is
 

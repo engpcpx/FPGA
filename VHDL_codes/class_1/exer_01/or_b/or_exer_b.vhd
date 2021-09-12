@@ -1,14 +1,14 @@
------------------------------------------------------------------------------------------- Exer or_b
+-- Exer or_b
 -- OR REDUTOR process/case
 -- author: paulo cezar da paixao
-----------------------------------------------------------------------------------------
+
 -- librarie and package
 library IEEE;
 	use IEEE.std_logic_1164.all;
 	--use IEEE.numeric_std.all;
 	--use std.textio.all;
 	--use ieee.numeric_std.all;
-----------------------------------------------------------------------------------------
+
 -- entiry declaration
 entity or_b is
 	port(
@@ -16,7 +16,7 @@ entity or_b is
 		output_port : out bit
 	);
 end or_b;
-----------------------------------------------------------------------------------------
+
 -- architecture declaration
 architecture circuit of or_b is
 

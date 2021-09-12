@@ -1,0 +1,134 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+
+// 
+// Device: Altera EP4CE40F29C8 Package FBGA780
+// 
+
+//
+// This file contains Slow Corner delays for the design using part EP4CE40F29C8,
+// with speed grade 8, core voltage 1.2V, and temperature 85 Celsius
+//
+
+// 
+// This SDF file should be used for ModelSim (VHDL) only
+// 
+
+(DELAYFILE
+  (SDFVERSION "2.1")
+  (DESIGN "leds_cmd")
+  (DATE "09/05/2021 15:22:31")
+  (VENDOR "Altera")
+  (PROGRAM "Quartus II 64-Bit")
+  (VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition")
+  (DIVIDER .)
+  (TIMESCALE 1 ps)
+
+  (CELL
+    (CELLTYPE "cycloneive_io_obuf")
+    (INSTANCE \\leds\[0\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (4756:4756:4756) (4891:4891:4891))
+        (IOPATH i o (3241:3241:3241) (3144:3144:3144))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_obuf")
+    (INSTANCE \\leds\[1\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (4912:4912:4912) (5083:5083:5083))
+        (IOPATH i o (3231:3231:3231) (3134:3134:3134))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_obuf")
+    (INSTANCE \\leds\[2\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (4470:4470:4470) (4669:4669:4669))
+        (IOPATH i o (3251:3251:3251) (3154:3154:3154))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_obuf")
+    (INSTANCE \\leds\[3\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (4875:4875:4875) (5053:5053:5053))
+        (IOPATH i o (3281:3281:3281) (3184:3184:3184))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_obuf")
+    (INSTANCE \\leds\[4\]\~output\\)
+    (DELAY
+      (ABSOLUTE
+        (PORT i (4772:4772:4772) (4912:4912:4912))
+        (IOPATH i o (4698:4698:4698) (4736:4736:4736))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_ibuf")
+    (INSTANCE \\switches\[0\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (806:806:806) (852:852:852))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_ibuf")
+    (INSTANCE \\switches\[1\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (806:806:806) (852:852:852))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_ibuf")
+    (INSTANCE \\switches\[2\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (796:796:796) (842:842:842))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_ibuf")
+    (INSTANCE \\switches\[3\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (826:826:826) (872:872:872))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "cycloneive_io_ibuf")
+    (INSTANCE \\switches\[4\]\~input\\)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH i o (806:806:806) (852:852:852))
+      )
+    )
+  )
+)

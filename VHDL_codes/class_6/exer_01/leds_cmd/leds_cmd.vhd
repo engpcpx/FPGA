@@ -1,0 +1,24 @@
+------------------------------------------------------------------
+-- leds_cmd
+------------------------------------------------------------------
+-- libraries and packages
+library ieee; 
+use ieee.std_logic_1164.all; 
+
+------------------------------------------------------------------
+-- entity
+entity leds_cmd is 
+	
+	generic(n : integer := 4);
+	
+	port (switches : in std_logic_vector(n downto 0); 
+			leds 		: out std_logic_vector(n downto 0)); 
+end leds_cmd; 
+------------------------------------------------------------------
+-- architecture
+architecture hardware of leds_cmd is 
+	begin 
+		leds <= switches; 
+		
+end hardware;
+------------------------------------------------------------------

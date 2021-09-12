@@ -1,6 +1,7 @@
 ------------------------------------------------------------------------------
 -- ram 1 (Random Access Mamory)
 -- author: Paulo Cezar da Paixao
+-- 
 ------------------------------------------------------------------------------
 -- libraries and packages
 library ieee;
@@ -11,15 +12,15 @@ use ieee.numeric_std.all;
 entity ram is
   
    generic(mwidth  : integer:= 16;      -- memory width
-	   mdepth  : integer:= 16);         -- memory depth 
+	   mdepth  : integer:= 16);     -- memory depth 
 
    port (
-         clk	    : in  std_logic;			                -- clock pulse   
-         rst        : in  std_logic;                            -- reset memory
-         we         : in  std_logic;      		                -- write read enable 
-         addr       : in  std_logic_vector(mdepth-1 downto 0);  -- address memory	
-	 data_in    : in  std_logic_vector(mwidth-1 downto 0);      -- input data
-         data_out   : out std_logic_vector(mwidth-1 downto 0)); -- output data
+         clk	    : in  std_logic;			         -- clock pulse   
+         rst        : in  std_logic;                             -- reset memory
+         we         : in  std_logic;      		         -- wre: write read enable 
+         addr       : in  std_logic_vector(mdepth-1 downto 0);   -- address memory	
+	 data_in    : in  std_logic_vector(mwidth-1 downto 0);   -- input data
+         data_out   : out std_logic_vector(mwidth-1 downto 0));  -- output data
 end entity;
 ------------------------------------------------------------------------------
 -- architecture

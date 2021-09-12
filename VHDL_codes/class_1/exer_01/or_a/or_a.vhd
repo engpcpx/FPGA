@@ -1,12 +1,11 @@
-----------------------------------------------------------------------------------------
 -- or_a gate
 -- OR - when/else structure
 -- author: paulo cezar da paixao
-----------------------------------------------------------------------------------------
+
 library IEEE;
 	use IEEE.std_logic_1164.all;
 	use IEEE.numeric_std.all;
-----------------------------------------------------------------------------------------
+
 -- entity declaration
 entity or_a is
  port(
@@ -14,7 +13,7 @@ entity or_a is
 		output_port	:	out	std_logic						
 	);
 end or_a;
-----------------------------------------------------------------------------------------
+
 -- architecture
 architecture circuit of or_a is
 
