@@ -1,0 +1,13 @@
+
+
+C:/FPGA_VHDL_codes/class_8/exer_2/counter/counter_pll.v
+
+Sep 25 11PM:33:40>: The following design file, which has identical name but a different extension 
+from the specified variation file, already exists in the working directory:
+
+counter_pll.vhd
+
+This may create a conflict of design files and/or lead to undesirable side
+effects.
+
+Is it OK to continue file generation?
