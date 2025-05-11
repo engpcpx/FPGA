@@ -62,7 +62,7 @@ Esta lista de exercícios tem como objetivo consolidar os conceitos fundamentais
 ## 🚀 Como Utilizar
 
 ### 🔬 Simulação
-Execute os testbenches em ferramentas como **ModelSim** ou **Vivado** para verificar a temporização e funcionalidade.trados foi usado o Quartus 2 e o Modelsim.
+Execute os testbenches em ferramentas como **ModelSim** ou **Vivado** para verificar a temporização e funcionalidade. Nos exercícios demonstrados foi usado o Quartus 2 e o Modelsim.
 
 ### 🧵 Síntese
 Utilize os scripts de síntese para FPGAs da **Intel (Quartus)** ou **Xilinx (Vivado)**
